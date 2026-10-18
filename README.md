@@ -1,8 +1,22 @@
 # Smart Waste Management Simulator (SWMS)
 
-Smart Waste Management Simulator (SWMS) is a full-stack planning and decision-support platform for municipal solid-waste management. It combines structured habitation data, configurable municipal parameters, GIS layers, long-term waste simulations, scenario analysis, and operational reporting in a single web application.
+Smart Waste Management Simulator (SWMS) is a full-stack planning and decision-support platform for municipal solid-waste management. It combines structured habitation data, configurable municipal parameters, GIS mapping, long-term simulations, scenario analysis, and operational planning tools in one application.
 
-The system is designed to help municipalities explore waste-generation trends, evaluate infrastructure and collection strategies, compare disruption scenarios, and make better-informed planning decisions.
+The system helps municipalities explore waste-generation trends, evaluate infrastructure and collection strategies, compare disruption scenarios, and make better-informed planning decisions.
+
+## Project Context
+
+SWMS was developed as a **team project for the HPL Hackathon 2026**.
+
+The project team consisted of:
+
+- **Yuktha S. Mayya**
+- **Ankitha Shanubhogh**
+- **Sanjana Desai**
+- **Shravya**
+- **Shreekala Naik**
+
+The team collaborated on product planning, interface development, backend services, data modeling, simulation workflows, testing, and documentation.
 
 ## Key Capabilities
 
@@ -63,11 +77,14 @@ The system is designed to help municipalities explore waste-generation trends, e
 | Security and middleware | Helmet, CORS, Morgan, dotenv |
 | Testing | Jest, ts-jest, Supertest |
 
-## AI-Assisted Development
+## Development Tools
 
-This project was developed with assistance from **Antigravity**, an AI-assisted coding and development platform. AI assistance was used to support implementation, documentation, problem-solving, and development workflow improvements.
+The project was developed using **Antigravity** and **Visual Studio Code (VS Code)**.
 
-All generated code and recommendations should be reviewed, tested, and validated by the project maintainers before use in production environments.
+- **Antigravity** supported AI-assisted ideation, implementation, problem-solving, documentation, and development workflows.
+- **Visual Studio Code** was used as the primary code editor for project development, debugging, testing, and repository management.
+
+AI-assisted suggestions and generated code were reviewed, adapted, and validated by the project team. The tools supported development but did not replace the team's design decisions, implementation work, testing, or review.
 
 ## Architecture Overview
 
@@ -195,8 +212,6 @@ http://localhost:5173
 
 Open the frontend URL printed in the terminal if Vite selects a different port.
 
-> When the API is launched through `src/server.ts`, validation and GIS workers may also be started by the server. Running `npm run dev:worker` separately remains supported for local development and queue isolation.
-
 ## Available Scripts
 
 | Command | Description |
@@ -224,7 +239,7 @@ npm run build
 npm test -- --runInBand
 ```
 
-Integration tests use `TEST_DATABASE_URL` when it is provided. Otherwise, they use a test database derived from `DATABASE_URL`. Apply the migrations to the database used by the tests before running the suite.
+Integration tests use `TEST_DATABASE_URL` when it is provided. Otherwise, they use a test database derived from `DATABASE_URL`. Apply the migrations to the database used by the tests before running them.
 
 ## Main API Flows
 
@@ -287,7 +302,7 @@ Stress scenarios apply explicit collection-disruption multipliers to baseline co
 
 ### Sensitivity Analysis
 
-The server reruns the simulation using controlled changes to population, population growth, and industrial-waste inputs. It compares peak daily waste, total projected waste, and landfill requirements against the baseline.
+The server reruns the simulation using controlled changes to population, population growth, and industrial-waste inputs. It compares peak daily waste, total projected waste, and landfill requirements.
 
 ### Route Optimization
 
@@ -340,4 +355,4 @@ Before production use, perform application security testing, load testing, datab
 
 ## License
 
-No formal open-source license has been specified for this repository. Contact the repository owner before redistributing, modifying, or using the project beyond personal, academic, or demonstration purposes.
+No formal open-source license has been specified for this repository. Contact the project team before redistributing, modifying, or using the project beyond personal, academic, or demonstration purposes.
