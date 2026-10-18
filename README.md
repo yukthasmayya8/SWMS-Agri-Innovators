@@ -4,6 +4,20 @@ Smart Waste Management Simulator (SWMS) is a full-stack planning and decision-su
 
 The system is designed to help municipalities explore waste-generation trends, evaluate infrastructure and collection strategies, compare disruption scenarios, and make better-informed planning decisions.
 
+## Project Context
+
+Smart Waste Management Simulator (SWMS) was developed as a team project for the **HPL Hackathon 2026**.
+
+Team members:
+
+- Yuktha S. Mayya
+- Ankitha Shanubhogh
+- Sanjana Desai
+- Shravya
+- Shreekala Naik
+
+The project was developed using **Antigravity** and **Visual Studio Code (VS Code)**.
+
 ## Key Capabilities
 
 ### Municipal Planning
