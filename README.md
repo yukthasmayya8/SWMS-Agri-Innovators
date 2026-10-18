@@ -63,6 +63,12 @@ The system is designed to help municipalities explore waste-generation trends, e
 | Security and middleware | Helmet, CORS, Morgan, dotenv |
 | Testing | Jest, ts-jest, Supertest |
 
+## AI-Assisted Development
+
+This project was developed with assistance from **Antigravity**, an AI-assisted coding and development platform. AI assistance was used to support implementation, documentation, problem-solving, and development workflow improvements.
+
+All generated code and recommendations should be reviewed, tested, and validated by the project maintainers before use in production environments.
+
 ## Architecture Overview
 
 SWMS follows a client-server architecture:
@@ -83,7 +89,7 @@ SWMS follows a client-server architecture:
           │
           ▼
 ┌────────────────────┐       ┌────────────────────┐
-│ BullMQ workers     │◀──────▶�� Redis              │
+│ BullMQ workers     │◀──────▶│ Redis              │
 │ Validation and GIS │       │ job queue          │
 │ processing         │       └────────────────────┘
 └────────────────────┘
@@ -305,7 +311,7 @@ Uploaded GeoJSON and Shapefile geometries are converted to GeoJSON and stored in
 - Validate uploaded files by type, size, schema, and ownership.
 - Use HTTPS and secure deployment configuration in production.
 - Restrict PostgreSQL and Redis network access to trusted services.
-- Review Firewalls, CORS, and allowed origins before exposing the API publicly.
+- Review firewalls, CORS, and allowed origins before exposing the API publicly.
 
 ## Repository Structure
 
@@ -315,16 +321,15 @@ swms-agriInnovators/
 │   ├── server.ts          # Express API entry point
 │   ├── worker.ts          # Background worker entry point
 │   ├── run.ts             # API runtime entry point
-│   └── ...                 # Frontend, API, simulation, GIS, and shared modules
-├── scripts/                # Database, smoke-test, and utility scripts
-├── migrations/             # PostgreSQL database migrations
-├── public/                 # Static frontend assets
-├── firestore.rules         # If present, deployment-specific rules/configuration
-├── package.json            # Dependencies and npm scripts
-├── tsconfig.json           # TypeScript configuration
-├── tsconfig.build.json     # Production API build configuration
-├── .env.example            # Environment variable template, if present
-└── README.md               # Project documentation
+│   └── ...                # Frontend, API, simulation, GIS, and shared modules
+├── scripts/               # Database, smoke-test, and utility scripts
+├── migrations/            # PostgreSQL database migrations
+├── public/                # Static frontend assets
+├── package.json           # Dependencies and npm scripts
+├── tsconfig.json          # TypeScript configuration
+├── tsconfig.build.json    # Production API build configuration
+├── .env.example           # Environment variable template, if present
+└── README.md              # Project documentation
 ```
 
 ## Development Status
