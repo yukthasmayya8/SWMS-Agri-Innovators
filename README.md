@@ -136,8 +136,8 @@ Verify PostgreSQL and Redis are available through their respective command-line 
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yukthasmayya8/swms-agriInnovators.git
-cd swms-agriInnovators
+git clone https://github.com/yukthasmayya8/SWMS-Agri-Innovators.git
+cd SWMS-Agri-Innovators 
 ```
 
 ### 2. Install dependencies
