@@ -331,7 +331,7 @@ Uploaded GeoJSON and Shapefile geometries are converted to GeoJSON and stored in
 ## Repository Structure
 
 ```text
-swms-agriInnovators/
+SWMS-Agri-Innovators/
 ├── src/
 │   ├── server.ts          # Express API entry point
 │   ├── worker.ts          # Background worker entry point
